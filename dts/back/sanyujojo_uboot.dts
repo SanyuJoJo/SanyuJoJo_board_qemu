@@ -1,0 +1,106 @@
+#include "sanyujojo.dtsi"
+
+/ {
+	#address-cells = <0x2>;
+	#size-cells = <0x2>;
+	compatible = "riscv-sanyujojo";
+	model = "riscv-sanyujojo,qemu";
+
+	chosen {
+		bootargs = "root=/dev/vda2 rw console=ttyS1";
+		stdout-path = "/soc/uart1@10001000";
+	};
+
+	memory@80000000 {
+		device_type = "memory";
+		reg = <0x0 0x80000000 0x0 0x40000000>;
+	};
+        reg_3p3v: regulator {
+		compatible = "regulator-fixed";
+		regulator-name = "3P3V";
+		regulator-min-microvolt = <3300000>;
+		regulator-max-microvolt = <3300000>;
+		regulator-always-on;
+		status = "okay";
+	};
+        
+
+};
+        &cpu7 {
+		status = "disabled";
+	};
+
+	&fw_cfg {
+		status = "okay";
+	};
+
+	&uart0 {
+		status = "okay";
+	};
+
+	&uart1 {
+		status = "okay";
+	};
+
+	&pflash {
+		status = "okay";
+	};
+
+	&rtc {
+		status = "okay";
+	};
+        &i2c0 {
+        status = "okay";
+
+        eeprom: eeprom@50 {
+                compatible = "atmel,24c64";
+                reg = <0x50>;
+                vcc-supply = <&reg_3p3v>;
+                };
+        };
+
+
+	
+
+&syscon {
+	status = "okay";
+};
+
+&reboot {
+	status = "okay";
+};
+
+&virtio_mmio0 {
+	status = "okay";
+};
+
+&virtio_mmio1 {
+	status = "okay";
+};
+
+&virtio_mmio2 {
+	status = "okay";
+};
+
+&virtio_mmio3 {
+	status = "okay";
+};
+
+&virtio_mmio4 {
+	status = "okay";
+};
+
+&virtio_mmio5 {
+	status = "okay";
+};
+
+&virtio_mmio6 {
+	status = "okay";
+};
+
+&virtio_mmio7 {
+	status = "okay";
+};
+
+
+

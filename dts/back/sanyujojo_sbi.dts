@@ -1,0 +1,150 @@
+#include "sanyujojo.dtsi"
+
+/ {
+	#address-cells = <0x2>;
+	#size-cells = <0x2>;
+	compatible = "riscv-sanyujojo";
+	model = "riscv-sanyujojo,qemu";
+
+	chosen {
+		stdout-path = "/soc/uart1@10001000";
+		opensbi-domains {
+		    compatible = "opensbi,domain,config";
+
+            tmem0: tmem0 {
+                compatible = "opensbi,domain,memregion";
+                base = <0x0 0xBF800000>;
+                order = <22>;
+            };
+
+            tmem1: tmem1 {
+                compatible = "opensbi,domain,memregion";
+                base = <0x0 0xBFC00000>;
+                order = <21>;
+            };
+
+            tmem2: tmem2 {
+                compatible = "opensbi,domain,memregion";
+                base = <0x0 0xBFE00000>;
+                order = <20>;
+            };
+
+            tmem3: tmem3 {
+                compatible = "opensbi,domain,memregion";
+                base = <0x0 0xBFF00000>;
+                order = <19>;
+            };
+
+            tmem4: tmem4 {
+                compatible = "opensbi,domain,memregion";
+                base = <0x0 0xBFFC0000>;
+                order = <18>;
+            };
+
+            tuart: tuart {
+                compatible = "opensbi,domain,memregion";
+                base = <0x0 0x10002000>;
+                order = <8>;
+                mmio;
+                devices = <&uart2>;
+            };
+
+		    allmem: allmem {
+		        compatible = "opensbi,domain,memregion";
+		        base = <0x0 0x0>;
+		        order = <64>;
+		    };
+
+            tdomain: trusted-domain {
+                compatible = "opensbi,domain,instance";
+                possible-harts = <&cpu7>;
+                regions = <&tmem0 0x7>, <&tmem1 0x7>, <&tmem2 0x7>, <&tmem3 0x7>, <&tmem4 0x7>, <&tuart 0x7>, <&allmem 0x7>;
+                boot-hart = <&cpu7>;
+                next-arg1 = <0x0 0x00000000>;
+		        next-addr = <0x0 0xBF800000>;
+		        next-mode = <0x0>;
+                system-reset-allowed;
+            };
+
+		    udomain: untrusted-domain {
+		        compatible = "opensbi,domain,instance";
+		        possible-harts = <&cpu0 &cpu1 &cpu2 &cpu3 &cpu4 &cpu5 &cpu6>;
+		        regions = <&tmem0 0x0>, <&tmem1 0x0>, <&tmem2 0x0>, <&tmem3 0x0>, <&tmem4 0x0>,  <&tuart 0x0>, <&allmem 0x7>;
+				boot-hart = <&cpu0>;
+		        next-arg1 = <0x0 0xB0000000>;
+		        next-addr = <0x0 0xB0200000>;
+		        next-mode = <0x1>;
+		        system-reset-allowed;
+		    };
+		};
+	};
+
+	memory@80000000 {
+		device_type = "memory";
+		reg = <0x0 0x80000000 0x0 0x40000000>;
+	};
+};
+
+&cpu0 {
+        opensbi-domain = <&udomain>;
+	status = "okay";
+};
+
+&cpu1 {
+        opensbi-domain = <&udomain>;
+	status = "okay";
+};
+
+&cpu2 {
+        opensbi-domain = <&udomain>;
+	status = "okay";
+};
+
+&cpu3 {
+        opensbi-domain = <&udomain>;
+	status = "okay";
+};
+
+&cpu4 {
+        opensbi-domain = <&udomain>;
+	status = "okay";
+};
+
+&cpu5 {
+        opensbi-domain = <&udomain>;
+	status = "okay";
+};
+
+&cpu6 {
+        opensbi-domain = <&udomain>;
+	status = "okay";
+};
+
+&cpu7 {
+        opensbi-domain = <&tdomain>;
+	status = "okay";
+};
+
+&uart0 {
+	status = "okay";
+};
+
+&uart1 {
+	status = "okay";
+};
+
+&uart2 {
+	status = "okay";
+};
+
+&pflash {
+	status = "okay";
+};
+
+&rtc {
+	status = "okay";
+};
+
+&syscon {
+	status = "okay";
+};
