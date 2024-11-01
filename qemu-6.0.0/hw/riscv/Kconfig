@@ -34,6 +34,24 @@ config RISCV_VIRT
     select SIFIVE_TEST
     select VIRTIO_MMIO
     select FW_CFG_DMA
+config SANYUJOJO
+    bool
+    select GOLDFISH_RTC
+    select SERIAL
+    select SIFIVE_CLINT
+    select SIFIVE_PLIC
+    select PFLASH_CFI01
+    imply PCI_DEVICES
+    imply TEST_DEVICES
+    select EDU
+    select PCI
+    select PCI_EXPRESS_GENERIC_BRIDGE
+    select I2C
+    select IMX_I2C
+    select AT24C
+    select VIRTIO_MMIO
+    select FW_CFG_DMA
+
 
 config SIFIVE_E
     bool
