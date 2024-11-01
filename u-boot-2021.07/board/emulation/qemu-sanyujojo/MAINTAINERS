@@ -1,0 +1,5 @@
+QEMU RISC-V 'SanyuJoJo' BOARD
+S:	Maintained
+F:	board/emulation/qemu-sanyujojo/
+F:	include/configs/qemu-sanyujojo.h
+F:	configs/qemu-sanyujojo_defconfig
