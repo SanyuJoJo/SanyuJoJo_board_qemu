@@ -63,7 +63,6 @@ config SPL_SYS_DCACHE_OFF
 # board-specific options below
 source "board/AndesTech/ax25-ae350/Kconfig"
 source "board/emulation/qemu-riscv/Kconfig"
-source "board/emulation/qemu-quard-star/Kconfig"
 source "board/emulation/qemu-sanyujojo/Kconfig"
 source "board/microchip/mpfs_icicle/Kconfig"
 source "board/sifive/unleashed/Kconfig"
