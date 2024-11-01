@@ -1,0 +1,64 @@
+src/getopt1.o: src/getopt1.c \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/stdc-predef.h \
+ src/config.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/lib/gcc/riscv64-unknown-linux-gnu/11.1.0/include/stdbool.h \
+ src/../src/mkcustom.h lib/alloca.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/lib/gcc/riscv64-unknown-linux-gnu/11.1.0/include/stddef.h \
+ src/getopt.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/stdio.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/libc-header-start.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/features.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/sys/cdefs.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/wordsize.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/long-double.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/gnu/stubs.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/gnu/stubs-lp64d.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/lib/gcc/riscv64-unknown-linux-gnu/11.1.0/include/stdarg.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/timesize.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/typesizes.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/time64.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/__fpos_t.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/__mbstate_t.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/__fpos64_t.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/__FILE.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/FILE.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/struct_FILE.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/cookie_io_functions_t.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/stdio_lim.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/floatn.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/floatn-common.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/stdio.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/gnu-versions.h
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/stdc-predef.h:
+src/config.h:
+/opt/gcc-riscv64-unknown-linux-gnu/lib/gcc/riscv64-unknown-linux-gnu/11.1.0/include/stdbool.h:
+src/../src/mkcustom.h:
+lib/alloca.h:
+/opt/gcc-riscv64-unknown-linux-gnu/lib/gcc/riscv64-unknown-linux-gnu/11.1.0/include/stddef.h:
+src/getopt.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/stdio.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/libc-header-start.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/features.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/sys/cdefs.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/wordsize.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/long-double.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/gnu/stubs.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/gnu/stubs-lp64d.h:
+/opt/gcc-riscv64-unknown-linux-gnu/lib/gcc/riscv64-unknown-linux-gnu/11.1.0/include/stdarg.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/timesize.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/typesizes.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/time64.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/__fpos_t.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/__mbstate_t.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/__fpos64_t.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/__FILE.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/FILE.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/struct_FILE.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/cookie_io_functions_t.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/stdio_lim.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/floatn.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/floatn-common.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/stdio.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/gnu-versions.h:

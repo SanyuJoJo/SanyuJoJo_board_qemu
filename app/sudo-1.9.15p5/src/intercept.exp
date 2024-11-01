@@ -1,0 +1,8 @@
+execvpe
+execl
+execle
+execlp
+execv
+execve
+execvp
+system

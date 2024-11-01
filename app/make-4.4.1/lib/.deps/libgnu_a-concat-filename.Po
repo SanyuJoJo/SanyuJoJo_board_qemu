@@ -1,0 +1,118 @@
+libgnu_a-concat-filename.o: concat-filename.c \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/stdc-predef.h \
+ ../src/config.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/lib/gcc/riscv64-unknown-linux-gnu/11.1.0/include/stdbool.h \
+ ../src/../src/mkcustom.h alloca.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/lib/gcc/riscv64-unknown-linux-gnu/11.1.0/include/stddef.h \
+ concat-filename.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/stdlib.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/libc-header-start.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/features.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/sys/cdefs.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/wordsize.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/long-double.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/gnu/stubs.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/gnu/stubs-lp64d.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/waitflags.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/waitstatus.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/floatn.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/floatn-common.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/locale_t.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/__locale_t.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/sys/types.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/timesize.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/typesizes.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/time64.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/clock_t.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/clockid_t.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/time_t.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/timer_t.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/stdint-intn.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/endian.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/endian.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/endianness.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/byteswap.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/uintn-identity.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/sys/select.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/select.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/sigset_t.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/__sigset_t.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/struct_timeval.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/struct_timespec.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/pthreadtypes.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/thread-shared-types.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/pthreadtypes-arch.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/struct_mutex.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/struct_rwlock.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/stdlib-bsearch.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/stdlib-float.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/errno.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/errno.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/linux/errno.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/asm/errno.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/asm-generic/errno.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/asm-generic/errno-base.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/error_t.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/string.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/strings.h \
+ filename.h
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/stdc-predef.h:
+../src/config.h:
+/opt/gcc-riscv64-unknown-linux-gnu/lib/gcc/riscv64-unknown-linux-gnu/11.1.0/include/stdbool.h:
+../src/../src/mkcustom.h:
+alloca.h:
+/opt/gcc-riscv64-unknown-linux-gnu/lib/gcc/riscv64-unknown-linux-gnu/11.1.0/include/stddef.h:
+concat-filename.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/stdlib.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/libc-header-start.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/features.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/sys/cdefs.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/wordsize.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/long-double.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/gnu/stubs.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/gnu/stubs-lp64d.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/waitflags.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/waitstatus.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/floatn.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/floatn-common.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/locale_t.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/__locale_t.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/sys/types.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/timesize.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/typesizes.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/time64.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/clock_t.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/clockid_t.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/time_t.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/timer_t.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/stdint-intn.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/endian.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/endian.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/endianness.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/byteswap.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/uintn-identity.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/sys/select.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/select.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/sigset_t.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/__sigset_t.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/struct_timeval.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/struct_timespec.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/pthreadtypes.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/thread-shared-types.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/pthreadtypes-arch.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/struct_mutex.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/struct_rwlock.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/stdlib-bsearch.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/stdlib-float.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/errno.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/errno.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/linux/errno.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/asm/errno.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/asm-generic/errno.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/asm-generic/errno-base.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/bits/types/error_t.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/string.h:
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/strings.h:
+filename.h:

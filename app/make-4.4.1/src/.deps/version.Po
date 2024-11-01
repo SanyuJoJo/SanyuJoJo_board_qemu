@@ -1,0 +1,12 @@
+src/version.o: src/version.c \
+ /opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/stdc-predef.h \
+ src/config.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/lib/gcc/riscv64-unknown-linux-gnu/11.1.0/include/stdbool.h \
+ src/../src/mkcustom.h lib/alloca.h \
+ /opt/gcc-riscv64-unknown-linux-gnu/lib/gcc/riscv64-unknown-linux-gnu/11.1.0/include/stddef.h
+/opt/gcc-riscv64-unknown-linux-gnu/sysroot/usr/include/stdc-predef.h:
+src/config.h:
+/opt/gcc-riscv64-unknown-linux-gnu/lib/gcc/riscv64-unknown-linux-gnu/11.1.0/include/stdbool.h:
+src/../src/mkcustom.h:
+lib/alloca.h:
+/opt/gcc-riscv64-unknown-linux-gnu/lib/gcc/riscv64-unknown-linux-gnu/11.1.0/include/stddef.h:
