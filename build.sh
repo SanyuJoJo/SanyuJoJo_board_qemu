@@ -266,7 +266,7 @@ build_all()
     build_firmware
     build_kernel
     build_busybox
-    #build_app
+    build_app
     build_image
 }
 
