@@ -1,0 +1,7 @@
+#!/bin/sh
+
+nfsip=`sed -n '/^[^ ]*:.* \/ nfs.*[ ,]addr=\([0-9.]\+\).*/s//\1/p' /proc/mounts`
+if [ -n "$nfsip" ] && ip route get to "$nfsip" | grep -q "dev $IFACE"; then
+	echo Skipping $IFACE, used for NFS from $nfsip
+	exit 1
+fi

@@ -1,0 +1,49 @@
+# basic settings... self explainatory
+deflogin on
+autodetach on
+startup_message off
+
+# the dash makes it a login shell
+defshell bash
+activity ""
+bell_msg ""
+vbell off
+vbell_msg ""
+defscrollback 2048
+nonblock on
+defutf8 on
+defbce on
+defflow off
+msgwait 1
+altscreen on
+
+# only Shift+k to kill - prevent accidents
+bind k
+bind ^k
+bind K kill
+
+escape \\\
+
+term screen-256color
+terminfo rxvt-unicode ti@:te@:
+ 
+hardstatus alwayslastline "%{=}%-w%{+b w}%n %t%{-b w}%+w %=%c"
+ 
+#let pgup/pgdn scroll under urxvt (see .Xdefaults)
+bindkey "^[[5;2~" eval "copy" "stuff ^u"
+bindkey -m "^[[5;2~" stuff ^u
+bindkey -m "^[[6;2~" stuff ^d
+
+screen -t window0 bash
+screen -t window1 bash
+select window0
+split -v
+focus right
+select window1
+screen -t window2 bash
+split
+focus down
+select window2
+focus up
+select window1
+focus left

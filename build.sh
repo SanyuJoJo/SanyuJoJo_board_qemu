@@ -17,7 +17,7 @@ build_qemu()
     echo "------------------------------ 编译qemu ------------------------------"
     cd $SRCPATH/qemu-6.0.0
 	if [ ! -d "$OUTPATH/qemu" ]; then  
-		./configure --prefix=$OUTPATH/qemu  --target-list=riscv64-softmmu --enable-gtk  --enable-virtfs --disable-gio
+		./configure --prefix=$OUTPATH/qemu  --target-list=riscv64-softmmu --enable-gtk  --enable-virtfs --disable-gio --enable-plugins
 		#./configure --prefix=$OUTPATH/qemu --target-list=riscv64-softmmu --enable-gtk  --enable-virtfs --disable-gio --enable-plugins --audio-drv-list=pa,alsa,sdl,oss
         #./configure --prefix=$OUTPATH/qemu --target-list=aarch64v-softmmu --enable-gtk  --enable-virtfs --disable-gio --enable-plugins --audio-drv-list=pa,alsa,sdl,oss
 fi    
@@ -199,11 +199,12 @@ build_image()
 	cp $OUTPATH/uboot/sanyujojo_uboot.dtb $TARGET_BOOTFS_DIR/sanyujojo.dtb
 	$SRCPATH/u-boot-2021.07/tools/mkimage -A riscv -O linux -T script -C none -a 0 -e 0 -n "Distro Boot Script" -d $SRCPATH/dts/sanyujojo_uboot.cmd $TARGET_BOOTFS_DIR/boot.scr
 	
-	cp -r $OUTPATH/busybox/* $TARGET_ROOTFS_DIR
-	cp -r $SRCPATH/target_root_script/* $TARGET_ROOTFS_DIR
+	cp -a $OUTPATH/busybox/* $TARGET_ROOTFS_DIR
+	cp -a $SRCPATH/target_root_script/* $TARGET_ROOTFS_DIR
 	
 	# app 
-	cp -r -p $SRCPATH/app/output/* $TARGET_ROOTFS_DIR
+	cp -a $SRCPATH/app/output/* $TARGET_ROOTFS_DIR
+	cp -a /usr/share/zoneinfo $TARGET_ROOTFS_DIR/usr/share/
 	
 	if [ ! -d "$TARGET_ROOTFS_DIR/proc" ]; then  
 	mkdir $TARGET_ROOTFS_DIR/proc
@@ -219,8 +220,8 @@ build_image()
 	fi
 	
 	if [ ! -d "$TARGET_ROOTFS_DIR/mnt" ]; then  
-    mkdir $TARGET_ROOTFS_DIR/mnt
-    fi
+    	mkdir $TARGET_ROOTFS_DIR/mnt
+    	fi
 	
 	if [ ! -d "$TARGET_ROOTFS_DIR/lib" ]; then  
 	mkdir $TARGET_ROOTFS_DIR/lib
@@ -266,7 +267,7 @@ build_all()
     build_firmware
     build_kernel
     build_busybox
-    build_app
+    #build_app
     build_image
 }
 

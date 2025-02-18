@@ -7,12 +7,40 @@ export PATH LD_LIBRARY_PATH
 /sbin/mdev -s
 /bin/mount -a
 
+mkdir /dev/pts
+mount -t devpts devpts /dev/pts
 mount -t 9p -o trans=virtio,version=9p2000.L,msize=16384 hostshare /mnt/
 
-echo QEMU-SANYUJOJO > /proc/sys/kernel/hostname
+/bin/hostname -F /etc/hostname
 
 dmesg -n 1
 chmod 666 /dev/null
+ln -s  /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+for i in /etc/init.d/S??* ;
+do
+    [ ! -f "$i" ] && continue
+    case "$i" in
+    *.sh)
+        (
+        trap - INT QUIT TSTP
+        set start
+        . $i
+        )
+        ;;
+    *)
+        $i start
+        ;;
+    esac
+done
+
+export QT_HOME=/opt/Qt-5.12.11
+export QT_QPA_FB_DRM=1
+export QT_QPA_GENERIC_PLUGINS=evdevkeyboard
+export QT_QPA_GENERIC_PLUGINS=evdevmouse
+export QT_QPA_EVDEV_MOUSE_PARAMETERS=/dev/input/event0
+export QT_QPA_EVDEV_KEYBOARD_PARAMETERS=/dev/input/event1
+export QT_PLUGIN_PATH=$QT_HOME/plugins
 
 echo "---------------------------------------------"
 echo " Welcome debugging on  SanyuJoJo board! "
