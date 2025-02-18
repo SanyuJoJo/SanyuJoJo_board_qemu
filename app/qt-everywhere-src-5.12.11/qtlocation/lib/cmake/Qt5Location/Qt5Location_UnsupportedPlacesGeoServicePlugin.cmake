@@ -1,0 +1,6 @@
+
+add_library(Qt5::UnsupportedPlacesGeoServicePlugin MODULE IMPORTED)
+
+_populate_Location_plugin_properties(UnsupportedPlacesGeoServicePlugin RELEASE "geoservices/libqtgeoservices_placesplugin_unsupported.so")
+
+list(APPEND Qt5Location_PLUGINS Qt5::UnsupportedPlacesGeoServicePlugin)

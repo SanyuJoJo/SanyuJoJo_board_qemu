@@ -1,0 +1,5 @@
+QT_PLUGIN.qtgeoservices_placesplugin_unsupported.TYPE = geoservices
+QT_PLUGIN.qtgeoservices_placesplugin_unsupported.EXTENDS = -
+QT_PLUGIN.qtgeoservices_placesplugin_unsupported.DEPENDS = core gui location
+QT_PLUGIN.qtgeoservices_placesplugin_unsupported.CLASS_NAME = UnsupportedPlacesGeoServicePlugin
+QT_PLUGINS += qtgeoservices_placesplugin_unsupported
